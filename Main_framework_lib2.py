@@ -34,7 +34,7 @@ from federated_learning import *
 from model_structure import *
 from utils import *
 from inversion_attacks import *
-from CGI_framework_utils import *
+from Main_framework_utils import *
 
 
 import  global_var 

@@ -43,7 +43,7 @@ from model_structure import *
 
 
 """
-CGI Utils
+ Utils
 - TargetBatchGenerator
 - Sampling Methods for Datasets
 - Metrics
@@ -493,7 +493,7 @@ def eval_image(dummy_data,original_input):
 
 
 """
-CGI FedSGD Utils
+ FedSGD Utils
 """
 
 
