@@ -56,14 +56,6 @@ def cal_gradient(model, original_input, original_label):
     return gradients
 
 
-def record_intermediate_output(model, module_class=nn.ReLU):
-    capture_layers = []
-    for module in model.modules():
-        if isinstance(module, module_class):
-            capture_layers.append(IMCapture(module))
-    return capture_layers
-
-
 def show_gradient(model, gradients, conv_bias=False, bn_aff=True):
     '''
     Visualize gradients

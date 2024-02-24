@@ -147,7 +147,8 @@ def sp_setting(fl_setting):
     batch_size = fl_setting["batch_size"]
     client_num = fl_setting["client_num"]
     malicious_num = fl_setting["malicious_num"]
-    
+    target_number = fl_setting["target_number"]
+
     without_target_benign_num = client_num - malicious_num - target_number
     with_target_benign_num = target_number
     without_target_mal_num = malicious_num
@@ -214,6 +215,7 @@ def standard_agr_condition(candidate_indices,input,with_target_benign_num):
 
 def sp_agr_condition(candidate_indices,input,with_target_benign_num):
     target_img_batch = []
+    target_number = with_target_benign_num
     flag=False
     target_indices = list(range(target_number))
     hit_num = 0
